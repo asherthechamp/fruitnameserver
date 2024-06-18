@@ -23,21 +23,6 @@ async function getData() {
     }))
     const text = JSON.stringify(new_array)
     fs.writeFile("./data.json", text, () => {})
-    // let use_data2 = data2.json()
-    
-     
-    // let rel = use_data1.forEach(element => {
-        
-    //         element.languages.forEach(e => {
-    //             use_data2.forEach(el => {
-    //                 return {
-    //                     language: e.name,
-    //                     fruit: el.name
-    //                 }
-    //             })
-                
-    //         })
-    //     })
 }
 
  getData()
