@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/data.json")) 
 })
 
-app.use(router)
+app.use('/', router)
 module.exports = {
     handler : serverless(app)
 } 
